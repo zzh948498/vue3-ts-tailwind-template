@@ -7,7 +7,7 @@ const { toClipboard } = useClipboard();
     await toClipboard(str);
     ElMessage.success('复制成功');
   } catch (error) {
-    console.log(error);
+    console.error(error);
     ElMessage.error('复制失败');
   }
 };
